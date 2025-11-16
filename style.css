@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+/* ===== ฟอนต์พื้นฐาน ===== */
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffe9d6; /* ครีมพาสเทล */
+    font-family: Itim, tahoma ;
+}
+
+/* ===== เมนูบน ===== */
+nav {
+    background: linear-gradient(to right, #ea71c7, #f3a7d6);
+    color: white;
+    padding: 12px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.logo:hover img {
+    transform: scale(1.08);
+}
+
+/* ===== ลิงก์เมนู ===== */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+    color: #4a0d2e;
+}
+
+/* ===== ส่วนคอนเทนต์ ===== */
+#content {
+    margin: 90px auto 120px auto;
+    padding: 40px 20px;
+    max-width: 900px;
+
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.8s ease-in-out;
+    font-family: Itim, tahoma ;
+}
+
+/* หัวข้อใหญ่ */
+h1 {
+    font-family: "Georgia", serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #d1498b;
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-family: Itim, tahoma ;
+}
+
+/* ===== รูปภาพ ===== */
+img {
+    width: 80%;
+    max-width: 600px;
+    border: 6px dashed #d56c6c;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.03);
+    border-color: #ea71c7;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ===== ปุ่ม ===== */
+button {
+    height: 45px;
+    width: 180px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: none;
+
+    background-color: #ea71c7;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #d1498b;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* ===== ฟุทเตอร์ ===== */
+footer {
+    background: linear-gradient(to right, #ea71c7, #f3a7d6);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px; 
+    letter-spacing: 1px;
+       font-family: Itim, tahoma ;
+}
+
+/* ===== Animation ===== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
